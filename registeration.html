@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studen Rrgistration Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    
+    <video id="video" autoplay muted loop>
+  <source src="vid2.mp4" type="video/mp4">
+</video>
+
     <div class="Registration-form">
-        <form action="#" method="post"  >
-        <h1><b><u>Student Registration Form</u></b></h1>
+        <form action="#" method="post">
+            <h1><b><u>Student Registration Form</u></b></h1>
 
             <label for="full-name"><u><b>Full Name:</b></u></label>
             <input type="text" id="full-name" name="full-name" placeholder="Enter Your Full Name">
-           
+
             <label for="email"><u><b>Email:</b></u></label>
             <input type="email" id="email" name="email" placeholder="e.g. abc123@gmail.com">
-           
+
             <label for="phone-number"><u><b>Phone Number:</b></u></label>
             <input type="tel" id="phone-number" name="phone-number" placeholder="e.g. +1234567890 ">
 
             <label for="date-of-birth"><u><b>Date Of Birth:</b></u></label>
             <input type="date" id="date-of-birth" name="date-of-birth">
-            
+
             <label for="gender"><u><b>Gender</b></u></label>
             <div class="gender-box">
                 <label for="male"><input type="radio" name="gender" value="Male">Male</label>
@@ -32,7 +39,7 @@
 
             <label for="department"><u><b>Department:</b></u></label>
             <select name="department" id="department">
-                <option >Select Department...</option>
+                <option>Select Department...</option>
                 <option value="CS">CS</option>
                 <option value="EE">EE</option>
                 <option value="AI">AI</option>
@@ -51,25 +58,27 @@
                 <label for="writing"><input type="checkbox" name="skills" value="Writing">Writing</label>
                 <label for="management"><input type="checkbox" name="skills" value="Management">Management</label>
                 <label for="creativity"><input type="checkbox" name="skills" value="Creativity">Creativity</label>
-                <label for="problem-solving"><input type="checkbox" name="skills" value="problem-solving">Problem Solving</label>
+                <label for="problem-solving"><input type="checkbox" name="skills" value="problem-solving">Problem
+                    Solving</label>
             </div>
 
             <label for="address"><u><b>Address:</b></u></label>
             <textarea name="address" id="address"></textarea>
-            
+
             <label for="picture"><u><b>Upload Profile Picture:</b></u></label>
             <input type="file" id="picture" name="picture" accept="image/*">
 
             <label for="password"><u><b>Password:</b></u></label>
             <input type="password" id="password" name="password" placeholder="e.g. ********">
-            
+
             <label for="confirm-password"><u><b>Confirm Password</b></u></label>
             <input type="password" id="confirm-password" name="confirm-password" placeholder="e.g. ********">
 
             <button type="submit" class="submit"><b>Submit</b></button>
             <button type="reset" class="reset"><b><b>Reset </b></b></button>
-    </form>
+        </form>
     </div>
     <script src="node.js"></script>
 </body>
+
 </html>
